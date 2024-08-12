@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            background-image: url(imagens/fundo.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: dimgray;
+        }
+
+        ul {
+            padding: 20px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.26);
+            color: rgb(53, 2, 2);
+        }
+
+        .formacao {
+            padding: 5%;
+            border: 1px solid dimgray;
+            box-shadow: 4px 4px rgba(0, 0, 0, 0.589);
+            font-size: 1.25rem;
+            font-family: monospace;
+            margin: 5%;
+            max-width: 800px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.658);
+            text-align: justify;
+            flex: 1;
+        }
+        
+        footer{
+            color: white;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1%;
+
+        }
+
+        /* Media Queries para dispositivos móveis */
+        @media (max-width: 768px) {
+            nav{
+                padding: 0;
+                width: 100%;
+            }
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            .formacao {
+                font-size: 1rem;
+                padding: 10%;
+                width: 90%;
+                margin: 10% auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sobre {
+                font-size: 0.9rem;
+                padding: 15%;
+                margin: 5% auto;
+            }
+
+            a {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul class="container">
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="formacao">
+        <h1>Formação</h1>
+        <hr>
+        <h2>Cursos</h2>
+        <p>Desenvolvimento web - Udemy</p>
+        <p>Logica de progamação e algoritmo - Curso em video</p>
+        <p>Html + CSS - Curso em video</p>
+        <br>
+        <h2>Ensino Superior</h2>
+        <p> Cursando analise e desenvolvimento de sistemas - Uninter</p>
+    </div>
+    <footer>
+        <h2>Desenvolvido por Moacir Jose Ricardo Junior</h2>
+    </footer>
+</body>
+</html>
